@@ -12,6 +12,7 @@ messageBox = document.querySelectorAll("[contenteditable='true']")[0];
 
 message="hi";
 
+for(i=0;i<5;i++){
 event = document.createEvent("UIEvents");
 
 messageBox.innerHTML = message.replace(/  /gm,'');
@@ -27,3 +28,4 @@ const eventFire = (el, etype) => {
 	}
   
  eventFire(document.querySelector('span[data-icon="send"]'), 'click');
+}
