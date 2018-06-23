@@ -1,4 +1,4 @@
- //node = document.querySelector('[title="Karunakaran"]');
+
  
  function simulateMouseEvents(element, eventName) {
     var mouseEvent= document.createEvent ('MouseEvents');
