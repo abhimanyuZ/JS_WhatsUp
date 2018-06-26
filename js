@@ -4,6 +4,24 @@ function simulateMouseEvents(element, eventName) {
     element.dispatchEvent(mouseEvent);
 }
 
+
+/*
+var now = new Date();
+
+// Replace Hours,Mins and secs with your desired time in 24 hour time format e.g.
+// var rt = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 14, 30, 00, 0) - now;  //to send message at 2.30PM 
+
+var rt = new Date(now.getFullYear(), now.getMonth(), now.getDate(), Hours, Minutes, Sec, 0) - now;  
+if (rt < 0) {
+     rt += 86400000; 
+}
+
+setTimeout(startTimer, rt);
+
+*/
+
+
+
 name="My Contact Name" //Replace My Contact Name with the name of your WhatsApp contact or group e.g. title="Peter Parker" 
 
 simulateMouseEvents(document.querySelector('[title='+name+']'), 'mousedown');  
