@@ -3,7 +3,10 @@ function simulateMouseEvents(element, eventName) {
     mouseEvent.initEvent(eventName, true, true);
     element.dispatchEvent(mouseEvent);
 }
-simulateMouseEvents(document.querySelector('[title="test"]'), 'mousedown');
+
+name="My Contact Name" //Replace My Contact Name with the name of your WhatsApp contact or group e.g. title="Peter Parker" 
+
+simulateMouseEvents(document.querySelector('[title='+name+']'), 'mousedown');  
 
 function startTimer() {
     setTimeout(myFunc, 3000);
@@ -13,20 +16,25 @@ function startTimer() {
 startTimer();
 
 
-var eventFire = (el, etype) => {
-    var evt = document.createEvent("MouseEvents");
-    evt.initMouseEvent(etype, true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-    el.dispatchEvent(evt);
+var eventFire = (MyElement, ElementType) =>  {
+    var MyEvent = document.createEvent("MouseEvents");
+    MyEvent.initMouseEvent(ElementType, true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+    MyElement.dispatchEvent(MyEvent);
 };
 
 
 function myFunc() {
 
     messageBox = document.querySelectorAll("[contenteditable='true']")[0];
-    message = "test";
-    for (i = 0; i < 2; i++) {
+    
+    message = "My Message"; //Replace My Message with your message
+    
+    counter=5;              //Replace 5 with the number of times you want to send your message
+    
+    
+    for (i = 0; i < counter; i++) {
         event = document.createEvent("UIEvents");
-        messageBox.innerHTML = message.replace(/ /gm, '');
+        messageBox.innerHTML = message.replace(/ /gm, '');          //test it
         event.initUIEvent("input", true, true, window, 1);
         messageBox.dispatchEvent(event);
 
