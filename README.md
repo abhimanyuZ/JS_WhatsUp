@@ -1,4 +1,4 @@
-The repo contains few lines of code in JS which allows users to handle WhatsApp Web using JavaScript.
+The repo contains few lines of code in JS which allows users to automate certain WhatsApp(WhatsApp Web) functionalities using JavaScript.
 
 Tweak it and have fun :)
 
