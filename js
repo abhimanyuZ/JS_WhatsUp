@@ -22,7 +22,7 @@ setTimeout(startTimer, rt);
 
 
 
-name="My Contact Name" //Replace My Contact Name with the name of your WhatsApp contact or group e.g. title="Peter Parker" 
+name=""
 
 simulateMouseEvents(document.querySelector('[title="'+name+'"]'), 'mousedown');  
 
@@ -45,9 +45,9 @@ function myFunc() {
 
     messageBox = document.querySelectorAll("[contenteditable='true']")[0];
     
-    message = "My Message"; //Replace My Message with your message
+    message = ""; 
     
-    counter=5;              //Replace 5 with the number of times you want to send your message
+    counter=1;            
     
     
     for (i = 0; i < counter; i++) {
