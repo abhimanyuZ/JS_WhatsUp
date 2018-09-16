@@ -24,7 +24,7 @@ setTimeout(startTimer, rt);
 
 name="My Contact Name" //Replace My Contact Name with the name of your WhatsApp contact or group e.g. title="Peter Parker" 
 
-simulateMouseEvents(document.querySelector('[title='+name+']'), 'mousedown');  
+simulateMouseEvents(document.querySelector('[title="'+name+'"]'), 'mousedown');  
 
 function startTimer() {
     setTimeout(myFunc, 3000);
